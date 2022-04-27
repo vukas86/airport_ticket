@@ -1,0 +1,147 @@
+body {
+  background-image: url("images/bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: wheat;
+  margin-top: 50px;
+}
+
+.form--section {
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 1100px;
+  height: 600px;
+  border: 2px solid white;
+  background-color: rgba(22, 20, 20, 0.75);
+  color: white;
+  /* margin: 150px 200px; */
+}
+
+.form--section h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.person {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 70px;
+  /* margin-left: 10px; */
+}
+/* .name__info {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+} */
+
+#seatNum,
+#row {
+  width: 75px;
+}
+
+.person input,
+select {
+  height: 50px;
+  width: 170.4px;
+}
+
+.right {
+  margin-left: 40px;
+}
+.right2 {
+  margin-left: 44px;
+}
+
+.up {
+  margin-top: 40px;
+}
+.btn {
+  color: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 70px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: #d90429;
+  min-width: 100px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ef233c;
+}
+.btn:active {
+  top: 2px;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-image: url("images/bg-imh-port\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .form--section {
+    width: 80%;
+    height: 80%;
+  }
+
+  /* .right3 {
+    width: 221.5px;
+    margin-left: 40px;
+  } */
+
+  .right3 {
+    margin-left: 40px;
+    text-align: left;
+  }
+  form .person,
+  .flight {
+    padding: 2px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name {
+    display: flex;
+    justify-content: left;
+    /* width: 45%; */
+  }
+
+  /* .name div {
+    padding-right: 15px;
+  } */
+
+  .person div input,
+  select {
+    width: 221px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .up {
+    margin-top: 0;
+  }
+
+  form h2 {
+    margin: 8px 0;
+  }
+
+  #tClass {
+    width: 90px;
+  }
+  #airp {
+    width: 90%;
+  }
+}

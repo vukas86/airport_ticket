@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" defer src="scrypt.js"></script>
+    <title>Booking Form</title>
+  </head>
+  <body>
+    <h1>Flight Booking Form</h1>
+    <section class="form--section">
+      <form action="flightTicket.html" method="get" id="ticketForm">
+        <h2>Personal Details</h2>
+        <div class="person">
+          <div class="right3">
+            <label for="fname">First Name:</label><br />
+            <input
+              type="text"
+              id="fname"
+              name="firName"
+              placeholder="Type first name here"
+              required
+            />
+          </div>
+          <div class="right">
+            <label for="surName">Surame:</label><br />
+            <input
+              type="text"
+              id="surName"
+              name="surName"
+              placeholder="Type surname here"
+              required
+            />
+          </div>
+          <div class="right">
+            <label for="passNum">Passport Number:</label><br />
+            <input
+              type="text"
+              id="passNum"
+              name="passNum"
+              placeholder="Passport Number"
+              required="true"
+            />
+          </div>
+          <div class="right">
+            <label for="expDate">Passport exp. Date:</label><br />
+            <input type="date" id="expDate" name="expDate" />
+          </div>
+        </div>
+
+        <h2>Flight Details</h2>
+        <div class="person">
+          <!-- <div class="name"> -->
+          <div class="right2">
+            <label for="airp">Airport:</label><br />
+            <input
+              type="text"
+              id="airp"
+              name="airp"
+              placeholder="Nikola Tesla"
+              value="Nikola Tesla"
+              disabled
+            />
+          </div>
+
+          <div class="right2">
+            <label for="tClass">Travel Class:</label>
+            <select name="tClass" id="tClass">
+              <option value="e">Economy</option>
+              <option value="b">Buisness</option>
+            </select>
+          </div>
+          <!-- </div> -->
+
+          <!-- <div class="name"> -->
+          <div class="right3">
+            <label for="depCity">Departure City:</label>
+            <select name="depCity" id="depCity">
+              <option value="Belgrade">Belgrade</option>
+              <option value="Barcelona">Barcelona</option>
+              <option value="Paris">Paris</option>
+              <option value="Berlin">Berlin</option>
+              <option value="Amsterdam">Amsterdam</option>
+              <option value="London">London</option>
+            </select>
+          </div>
+          <div class="right3">
+            <label for="arrCity">Arrival City:</label>
+            <select name="arrCity" id="arrCity">
+              <option value="Belgrade">Belgrade</option>
+              <option value="Barcelona">Barcelona</option>
+              <option value="Paris">Paris</option>
+              <option value="Berlin">Berlin</option>
+              <option value="Amsterdam">Amsterdam</option>
+              <option value="London">London</option>
+            </select>
+          </div>
+          <!-- </div> -->
+        </div>
+        <div class="person up">
+          <!-- <div class="name"> -->
+          <div class="right2">
+            <label for="airline">Airline:</label>
+            <select name="airline" id="airline">
+              <option value="JU - AirSerbia">AirSerbia</option>
+              <option value="IB - Iberia">Iberia</option>
+              <option value="AF - AirFrance">AirFrance</option>
+              <option value="LH - Lufthansa">Lufthansa</option>
+              <option value="KL - KLM">KLM</option>
+              <option value="BA - British Airways">British Airways</option>
+            </select>
+          </div>
+          <div class="right2">
+            <label for="seatNum">Seat:</label>
+            <input
+              type="number"
+              id="seatNum"
+              name="Seat"
+              placeholder="Seat Num."
+            />
+          </div>
+          <div class="right2">
+            <label for="row">Row:</label>
+            <input type="text" id="row" name="Row" placeholder="Row" />
+          </div>
+
+          <div class="right2">
+            <label for="depDate">Date of Departure:</label
+            ><input type="date" id="depDate" name="depDate" />
+          </div>
+          <div class="right3">
+            <label for="depTime">Time of Departure:</label
+            ><input type="time" id="depTime" name="depTime" />
+          </div>
+        </div>
+
+        <br />
+        <input type="button" value="Submit" class="btn" />
+        <!-- <a href="#" id="myLink" class="btn">Submit</a> -->
+      </form>
+    </section>
+  </body>
+</html>

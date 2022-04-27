@@ -1,0 +1,15 @@
+{
+  "name": "airport_ticket",
+  "version": "1.0.0",
+  "description": "Airport ticket printing",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Aleksandar Vukasovic",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.5.0"
+  }
+}
