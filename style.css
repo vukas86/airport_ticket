@@ -60,6 +60,11 @@ select {
 .up {
   margin-top: 40px;
 }
+
+form a {
+  text-decoration: none;
+}
+
 .btn {
   color: white;
   display: block;
@@ -95,17 +100,9 @@ select {
   .form--section {
     width: 80%;
     height: 80%;
+    justify-content: center;
   }
 
-  /* .right3 {
-    width: 221.5px;
-    margin-left: 40px;
-  } */
-
-  .right3 {
-    margin-left: 40px;
-    text-align: left;
-  }
   form .person,
   .flight {
     padding: 2px 20px;
@@ -116,18 +113,23 @@ select {
   .name {
     display: flex;
     justify-content: left;
-    /* width: 45%; */
   }
 
-  /* .name div {
-    padding-right: 15px;
-  } */
+  .person {
+    width: 90%;
+    margin: 0;
+  }
 
   .person div input,
   select {
     width: 221px;
     height: 30px;
     margin-bottom: 10px;
+  }
+
+  .right,
+  .right2 {
+    margin-left: 0;
   }
 
   .up {
@@ -141,7 +143,8 @@ select {
   #tClass {
     width: 90px;
   }
-  #airp {
-    width: 90%;
+
+  .btn {
+    margin-top: 15px;
   }
 }
