@@ -59,7 +59,7 @@ console.log(flightNumGen());
 const render = function () {
   const markup = `
   <header class="Header">
-  <img src="logos/logo.png" alt="logo" height="125" />
+  <img src="logos/logo.svg" alt="logo" height="125" />
   <h1>Plane Ticket Purchase</h1>
 </header>
 <section class="confirm">
