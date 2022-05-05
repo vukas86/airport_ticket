@@ -11,7 +11,7 @@ const seatNum = JSON.parse(localStorage.getItem("seatNum"));
 const seatRow = JSON.parse(localStorage.getItem("row"));
 const depDate = localStorage.getItem("depDate");
 const depTime = localStorage.getItem("depTime");
-const ticketElement = document.querySelector(".ticket");
+const headerElement = document.querySelector(".header");
 const btnElement = document.querySelector(".btn");
 const exportPdfbtn = document.getElementById("export-pdf");
 const bodyElement = document.body;
@@ -60,10 +60,6 @@ console.log(flightNumGen());
 
 const render = function () {
   const markup = `
-  <header class="Header">
-  <img src="logos/logo.svg" alt="logo" height="125" />
-  <h1>Plane Ticket Purchase</h1>
-</header>
 <section class="confirm">
   <div class="bookNum">
     <h3>Booking Number:</h3>
@@ -121,7 +117,7 @@ const render = function () {
 </section>
 `;
 
-  ticketElement.insertAdjacentHTML("afterbegin", markup);
+  headerElement.insertAdjacentHTML("afterend", markup);
 };
 
 render();
