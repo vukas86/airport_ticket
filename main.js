@@ -16,6 +16,7 @@ const btnElement = document.querySelector(".btn");
 const mainSection = document.querySelector(".ticket");
 console.log(mainSection);
 const exportPdfbtn = document.getElementById("export-pdf");
+const bodyElement = document.body;
 
 const randomBookNum = () =>
   Math.random().toString(36).substr(2, 10).toUpperCase();
@@ -158,6 +159,6 @@ html2pdf().set({
 
 exportPdfbtn.addEventListener("click", (e) => {
   e.preventDefault();
-  html2pdf(mainSection, opt);
+  html2pdf(bodyElement, opt);
   console.log("ia ma ");
 });
