@@ -148,7 +148,7 @@ const opt = {
 };
 
 html2pdf().set({
-  pagebreak: { mode: "avoif-all", before: ".wrapper" },
+  pagebreak: { before: ".wrapper" },
 });
 
 exportPdfbtn.addEventListener("click", (e) => {
