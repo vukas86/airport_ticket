@@ -86,13 +86,13 @@ a {
 }
 
 .btn {
-  background-color: #eee;
+  background-color: rgb(112, 17, 237);
   border: none;
   padding: 1rem;
   font-size: 1rem;
   width: 10em;
   border-radius: 1rem;
-  color: lightcoral;
+  color: #fff;
   box-shadow: 0 0.4rem #dfd9d9;
   cursor: pointer;
 }
@@ -100,6 +100,18 @@ a {
 .btn:active {
   color: white;
   box-shadow: 0 0.2rem #dfd9d9;
+  transform: translateY(0.2rem);
+}
+
+.btn2 {
+  background-color: rgb(241, 10, 10);
+  color: white;
+  margin-left: 15px;
+}
+
+.btn2:active {
+  color: white;
+  box-shadow: 0 0.2rem rgb(241, 10, 10);
   transform: translateY(0.2rem);
 }
 

@@ -5,7 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="ticketStyle.css" />
+    <link rel="icon" href="logos/logo-copy.png" type="image/png" />
     <script type="module" defer src="main.js"></script>
+    <script
+      src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <title>Flight TIcket</title>
   </head>
   <body>
@@ -71,7 +82,8 @@
       </section>
        -->
       <div class="wrapper">
-        <a class="btn" download="ticket.txt">Download Ticket</a>
+        <a class="btn" download="ticket.txt">Save as a txt</a>
+        <a class="btn btn2" id="export-pdf">Save as a PDF</a>
       </div>
     </div>
   </body>

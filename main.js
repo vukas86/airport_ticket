@@ -13,6 +13,9 @@ const depDate = localStorage.getItem("depDate");
 const depTime = localStorage.getItem("depTime");
 const ticketElement = document.querySelector(".ticket");
 const btnElement = document.querySelector(".btn");
+const mainSection = document.querySelector(".ticket");
+console.log(mainSection);
+const exportPdfbtn = document.getElementById("export-pdf");
 
 const randomBookNum = () =>
   Math.random().toString(36).substr(2, 10).toUpperCase();
@@ -144,3 +147,17 @@ let data =
 
 const textToBlob = new Blob([data], { type: "text/plain" });
 btnElement.href = URL.createObjectURL(textToBlob);
+
+const opt = {
+  filename: "ticket.pdf",
+};
+
+html2pdf().set({
+  pagebreak: { before: ".wrapper" },
+});
+
+exportPdfbtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  html2pdf(mainSection, opt);
+  console.log("ia ma ");
+});
